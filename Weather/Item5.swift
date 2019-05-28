@@ -25,12 +25,12 @@ class Item5: UIViewController {
                 let testDayType = JSONdecoded["time"]["startPeriodName"][0].stringValue
                 let Temps = JSONdecoded["data"]["temperature"]
                 if !testDayType.contains("night") {
-                    let temps = "Temp: " + Temps[10].stringValue + "/" + Temps[11].stringValue + "\n"
-                    let day = JSONdecoded["time"]["startPeriodName"][10].stringValue + "\n"
-                    let desc = JSONdecoded["data"]["text"][10].stringValue
+                    let temps = "Temp: " + Temps[12].stringValue + "/" + Temps[13].stringValue + "\n"
+                    let day = JSONdecoded["time"]["startPeriodName"][12].stringValue + "\n"
+                    let desc = JSONdecoded["data"]["text"][12].stringValue
                     self.miniDesc.text = day + temps + desc
                     
-                    let imageUrlString = JSONdecoded["data"]["iconLink"][10].stringValue
+                    let imageUrlString = JSONdecoded["data"]["iconLink"][12].stringValue
                     let httpsed = imageUrlString.replacingOccurrences(of: "http://", with: "https://")
                     let imageUrl = URL(string: httpsed)!
                     let imageData = try! Data(contentsOf: imageUrl)
@@ -38,12 +38,12 @@ class Item5: UIViewController {
                     self.Icon.image = image
                 }
                 if testDayType.contains("night") {
-                    let temps = "Temp: " + Temps[9].stringValue + "/" + Temps[10].stringValue + "\n"
-                    let day = JSONdecoded["time"]["startPeriodName"][9].stringValue + "\n"
-                    let desc = JSONdecoded["data"]["text"][9].stringValue
+                    let temps = "Temp: " + Temps[11].stringValue + "/" + Temps[12].stringValue + "\n"
+                    let day = JSONdecoded["time"]["startPeriodName"][11].stringValue + "\n"
+                    let desc = JSONdecoded["data"]["text"][11].stringValue
                     self.miniDesc.text = day + temps + desc
                     
-                    let imageUrlString = JSONdecoded["data"]["iconLink"][9].stringValue
+                    let imageUrlString = JSONdecoded["data"]["iconLink"][11].stringValue
                     let httpsed = imageUrlString.replacingOccurrences(of: "http://", with: "https://")
                     let imageUrl = URL(string: httpsed)!
                     let imageData = try! Data(contentsOf: imageUrl)
