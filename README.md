@@ -3,8 +3,7 @@ A simple weather app based off of the National Weather Service REST API
 
 
 ## Install
-To install this weather app 
-Either
+To install this weather app
 1. Compile
 2. Upload to device
 --Or--
