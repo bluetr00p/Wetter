@@ -10,7 +10,7 @@ To install this weather app
 1. Upload Ipa from the [Releases](https://github.com/bluetr00p/Wetter/releases) tab to [Cydia Impactor](http://www.cydiaimpactor.com/)
 2. Sign and enjoy
 
-##Todo
+## Todo
 - ~~Get RC1~~
 - Add *Core Location* support
 - Add custom image uploading support
